@@ -1,0 +1,303 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(to right, #dfe9f3, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+}
+
+/* style de chaque carte */
+.carte {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 40px 28px rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+    height: 670px;
+    width: 280px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+#carte_1 h1 {
+    font-weight: lighter;
+    text-align: center;
+}
+
+#carte_2 h1 {
+    font-weight: lighter;
+    text-align: center;
+}
+
+#carte_3 h1 {
+    font-weight: lighter;
+    text-align: center;
+}
+
+/* effet flottant vers le bas lors du survol d'une carte */
+.carte:hover {
+    transform: translateY(48px);
+}
+
+/* mise en place de l'affichage de pays, nom et fleches */
+.translate {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 40px 28px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    justify-content: space-around;
+    height: 130px;
+    width: 280px;
+}
+
+/* translate carte 3 */
+#translate {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 40px 28px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    justify-content: space-around;
+    height: 130px;
+    width: 400px;
+}
+
+.carte .translate .usa {
+    height: 51px;
+    width: 51px;
+}
+
+/* mise en place direct de tous les header */
+.header {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    gap:60px;
+}
+
+.header i {
+    font-size: 27px;
+}
+
+/* travail sur nos fleches  */
+.change {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 63px;
+}
+
+.change i {
+    width : 35px;
+    height : 15px;
+}
+
+/* style de la barre de menu de chaque carte */
+i {
+    font-size: 30px;
+}
+
+/* mise en place de la partie avec du texte et les autres elements */
+.zone {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 40px 28px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 7px;
+    height: 350px;
+    width: 280px;
+}
+
+/* carte 2 */
+#zone {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 40px 28px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 7px;
+    height: 290px;
+    width: 280px;
+}
+
+/* carte 3  */
+#zone3 {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 40px 28px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 10px;
+    height: 480px;
+    width: 280px;
+}
+
+.zone_txt_1, .zone_txt_2 {
+    display: flex;
+    justify-content: space-around;
+} 
+
+i {
+    font-size: 16px;
+}
+
+.Text_1, .Text_2 {
+    width: 200px;
+    height:50px;
+    font-weight: 200px;
+    border: none;
+    background-color: transparent; /* transparence */
+    resize: none;                  /* désactive la poignée de resize */
+    outline: none;                 /* enlève le contour au focus */
+}
+
+.Text_1 {
+    margin-bottom: 15px;
+}
+
+/* alignement des elements de bas pour la boite */
+.Boite {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+/* carte 2 */
+#Boite {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#Boite3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.boite_1, .boite_2, .boite_3 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 40px 28px rgba(0, 0, 0, 0.1);
+    border-style:initial;
+    border-radius: 10px;
+    height: 80px;
+    width: 80px;
+}
+
+.Boite  i {
+    font-size: 20px;
+}
+
+.Boite p {
+    font-size: 10px;
+}
+
+/* organisation de notre footer */
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 70px;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+}   
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 70px;
+    margin-top: 80px;
+    background-color: rgb(255, 255, 255);
+}
+
+.footer i {
+    font-size: 22px;
+    margin-top: 10px;
+} 
+
+/* .milieu {
+    display: flex;
+    flex-direction: column;
+}     */
+
+.home {
+    text-align: center;
+    /* flex-direction: column; */
+    background: rgba(0, 0, 62, 0.9);
+    box-shadow: 0 40px 28px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    margin-bottom: 20px;
+}    
+
+/* home carte 2 */
+#home2 {
+    /* text-align: center; */
+    /* flex-direction: column; */
+    background: rgba(0, 0, 62, 0.9);
+    box-shadow: 0 40px 28px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    /* margin-bottom: 20px;*/
+} 
+
+#home {
+    margin-top: 13px;
+    color: #007bff;
+}
+
+#voice {
+    padding-top: 15px;
+    color: #007bff;
+} 
+
+/* .barre {
+    display: flex;
+    justify-content: center;
+}     */
+
+/* Carte 3 pour l'element apres la zone de saisi */
+.inter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 40px 28px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    height: 250px;
+    width: 250px;
+}
